@@ -6,19 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            app:title="@string/app_name"
-            app:titleTextColor="@color/white"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </com.google.android.material.appbar.AppBarLayout>
-
     <ProgressBar
         android:id="@+id/progress_bar"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
@@ -34,6 +21,7 @@
 
     <io.github.kexanie.library.MathView
         android:id="@+id/webview"
+        app:engine="MathJax"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
